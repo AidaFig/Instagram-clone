@@ -28,8 +28,8 @@ header {
   align-items: center;
 }
 header .header-icon {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
 }
 header .header-logo {
   width: 95px;
@@ -48,6 +48,22 @@ header .header-logo {
 .story-section img {
   border: 2px solid #a41e75;
   border-radius: 50%;
+}
+
+.profile-feed {
+  display: flex;
+  align-items: center;
+}
+.profile-feed img {
+  margin: 10px 10px;
+}
+
+.interaction-icons {
+  display: flex;
+  justify-content: space-between;
+}
+.interaction-icons img {
+  margin: 10px 6px;
 }
 
 /*# sourceMappingURL=home.css.map */

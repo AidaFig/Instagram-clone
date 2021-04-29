@@ -9,8 +9,8 @@ header {
     @include flex (row, space-between, center);
 
     .header-icon {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
     }
     .header-logo {
         width: 95px;
@@ -30,3 +30,23 @@ header {
         border-radius: 50%;
     }
 }
+
+
+.profile-feed {
+    display: flex;
+    align-items: center;
+
+    img {
+        margin: 10px 10px;
+    }
+    
+}
+.interaction-icons {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        margin: 10px 6px;
+    }
+}
+
