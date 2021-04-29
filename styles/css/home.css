@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body, html {
+  height: 100%;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 12px;
+}
+
+header {
+  background-color: #fafafa;
+  width: 100%;
+  min-height: 44px;
+  /*display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-icon {
+  width: 35px;
+  height: 35px;
+}
+header .header-logo {
+  width: 95px;
+  height: 35px;
+}
+
+/*# sourceMappingURL=home.css.map */
