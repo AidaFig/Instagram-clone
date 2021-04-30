@@ -12,6 +12,7 @@ header {
         width: 30px;
         height: 30px;
     }
+
     .header-logo {
         width: 95px;
         height: 35px;
@@ -67,14 +68,58 @@ header {
             height: 375px;
             object-fit: cover;
         }
-        .interaction-icons {
-            display: flex;
-            justify-content: space-between;
-        
-            img {
-                margin: 10px 6px;
+        .action-container {
+            padding: 12px 15px;
+
+            .action-icons {
+                display: flex;
+                gap: 17.5px;
+
+                 .icons {
+                     height: 20px;
+                     width: auto;
+                     
+                     &:last-child {
+                         margin-left: auto;
+                     }
+                 }
+
             }
+          .likes-info {
+              display: flex;
+              align-items: center;
+              padding: 12px 0 5px;
+
+              .people-likes {
+                  width: 17px;
+                  height: 17px;
+                  margin-right: 6.5px;
+              }
+              .likes-quantity {
+                  font-size: 1.2rem;
+              }
+          } 
+          .subtitle {
+              font-size: 1.2rem;
+          } 
         }
+    }
+}
+
+.tab-bar {
+    width: 100%;
+    min-height: 50px;
+    background-color: $input-color;
+    position: sticky;
+    bottom: 0;
+    padding: 0 26px;
+
+    @include flex (row, space-between, center);
+
+    .img-tab-bar {
+        width: 23px;
+        height: 23px;
+        cursor: pointer;
     }
 }
 

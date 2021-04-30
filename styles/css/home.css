@@ -82,12 +82,53 @@ header .header-logo {
   height: 375px;
   object-fit: cover;
 }
-.feed-container .post .interaction-icons {
-  display: flex;
-  justify-content: space-between;
+.feed-container .post .action-container {
+  padding: 12px 15px;
 }
-.feed-container .post .interaction-icons img {
-  margin: 10px 6px;
+.feed-container .post .action-container .action-icons {
+  display: flex;
+  gap: 17.5px;
+}
+.feed-container .post .action-container .action-icons .icons {
+  height: 20px;
+  width: auto;
+}
+.feed-container .post .action-container .action-icons .icons:last-child {
+  margin-left: auto;
+}
+.feed-container .post .action-container .likes-info {
+  display: flex;
+  align-items: center;
+  padding: 12px 0 5px;
+}
+.feed-container .post .action-container .likes-info .people-likes {
+  width: 17px;
+  height: 17px;
+  margin-right: 6.5px;
+}
+.feed-container .post .action-container .likes-info .likes-quantity {
+  font-size: 1.2rem;
+}
+.feed-container .post .action-container .subtitle {
+  font-size: 1.2rem;
+}
+
+.tab-bar {
+  width: 100%;
+  min-height: 50px;
+  background-color: #fafafa;
+  position: sticky;
+  bottom: 0;
+  padding: 0 26px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.tab-bar .img-tab-bar {
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=home.css.map */
