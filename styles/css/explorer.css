@@ -1,3 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
 
+body, html {
+  height: 100%;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 12px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+}
+header .qrcode-reader {
+  width: 20px;
+  height: 20px;
+}
+header .input {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  border: 1px solid #DDD;
+  background-color: rgba(118, 118, 128, 0.12);
+  width: 327px;
+  height: 36px;
+  border-radius: 10px;
+}
+header .input .icon-input {
+  width: 20px;
+  height: 20px;
+}
+header .input input {
+  height: 36px;
+  width: 184px;
+  border: none;
+  background-color: rgba(239, 237, 237, 0.877);
+}
+header .input input::placeholder {
+  color: rgba(60, 60, 67, 0.6);
+  font-size: 16px;
+  padding: 0 6px;
+}
 
 /*# sourceMappingURL=explorer.css.map */

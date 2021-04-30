@@ -1,0 +1,46 @@
+@import "../scss/styles.scss";
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+
+    
+    .qrcode-reader {
+        width: 20px;
+        height: 20px;
+    } 
+    
+    .input{
+        display: flex;
+        align-items: center;
+        padding: 10px 10px;
+        border: 1px solid #DDD;
+        background-color: rgba(118, 118, 128, 0.12);
+        width: 327px;
+        height: 36px;
+        border-radius: 10px;
+    
+        .icon-input {
+            width: 20px;
+            height: 20px;
+            
+        }
+    
+    
+        input {
+            height: 36px;
+            width: 184px;
+            border: none;
+            background-color: rgba(239, 237, 237, 0.877);
+    
+            &::placeholder {
+                color: rgba(60, 60, 67, 0.6);
+                font-size: 16px;
+                padding: 0 6px;
+            }
+        }
+    }
+}
