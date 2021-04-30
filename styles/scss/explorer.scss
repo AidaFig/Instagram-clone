@@ -12,12 +12,12 @@ header {
         width: 20px;
         height: 20px;
     } 
-    
+
     .input{
         display: flex;
         align-items: center;
         padding: 10px 10px;
-        border: 1px solid #DDD;
+        border: none;
         background-color: rgba(118, 118, 128, 0.12);
         width: 327px;
         height: 36px;
@@ -28,7 +28,6 @@ header {
             height: 20px;
             
         }
-    
     
         input {
             height: 36px;
@@ -42,5 +41,65 @@ header {
                 padding: 0 6px;
             }
         }
+    }
+}
+
+.categories-container {
+    width: 100%;
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .categories-box {
+        display: flex;
+        font-size: 14px;
+        font-weight: 600;
+        border: 1px solid rgba(60, 60, 67, 0.18);
+        border-radius: 6px;
+        padding: 10px 10px;
+        text-align: center;
+
+        .icon-categories {
+            width: 12.75;
+            height: 14.78;
+            padding-right: 5px;
+        }
+    }
+}
+
+.galery-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1px;
+    margin: 7px 0;
+
+    .photos {
+        flex-basis: 124px;
+        flex-grow: 1;
+    }
+
+
+}
+.tab-bar {
+    width: 100%;
+    min-height: 50px;
+    background-color: $input-color;
+    position: sticky;
+    bottom: 0;
+    padding: 0 26px;
+
+    @include flex (row, space-between, center);
+
+    .img-tab-bar {
+        width: 23px;
+        height: 23px;
+        cursor: pointer;
     }
 }
