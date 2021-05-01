@@ -49,11 +49,11 @@ header {
     display: flex;
     gap: 6px;
     overflow-x: auto;
+    padding: 0 10px;
 
     &::-webkit-scrollbar {
         display: none;
     }
-
 
     .categories-box {
         display: flex;
@@ -78,7 +78,7 @@ header {
     flex-wrap: wrap;
     width: 100%;
     gap: 1px;
-    margin: 7px 0;
+    margin: 10px 0;
 
     .photos {
         flex-basis: 124px;

@@ -10,4 +10,8 @@ body, html {
   height: 100%;
 }
 
+a {
+  color: black;
+}
+
 /*# sourceMappingURL=reset.css.map */
