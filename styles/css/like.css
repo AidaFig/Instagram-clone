@@ -14,6 +14,23 @@ a {
   color: black;
 }
 
+.this-week-container .this-week, .new-today-container .new-today {
+  display: flex;
+  align-items: center;
+  padding: 16px 16px;
+}
+
+.this-week-container .this-week p span, .new-today-container .new-today p span {
+  color: gray;
+  padding-left: 3px;
+}
+
+.this-week-container .activity-2, .new-today-container .activity {
+  padding: 13px 16px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
 html {
   font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
@@ -24,14 +41,113 @@ header {
   width: 100%;
   height: 80px;
 }
-
-.following-you {
+header .following-you {
   width: 100%;
   height: 80px;
   padding: 20px 20px;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
+}
+header .following {
+  color: rgba(0, 0, 0, 0.4);
+}
+header .you {
+  border-bottom: 1.5px solid black;
+}
+
+.follow-requests {
+  width: 100%;
+  height: 48px;
+  padding: 14px 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.follow-requests .span {
+  font-size: 16px;
+}
+
+.new-today-container {
+  width: 100%;
+}
+.new-today-container .new-today {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.new-today-container .new-today p {
+  padding: 0px 12px;
+}
+.new-today-container .new-today .liked-photo {
+  margin-left: auto;
+}
+.new-today-container .new-today .double-liked {
+  position: relative;
+  margin-bottom: 30px;
+  margin-right: 20px;
+}
+.new-today-container .new-today .zackjhon {
+  position: absolute;
+  margin-left: 20px;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.this-week-container {
+  width: 100%;
+}
+.this-week-container .this-week .mentioned-photo {
+  margin-left: auto;
+}
+.this-week-container .this-week p {
+  padding: 0px 12px;
+}
+.this-week-container .this-week a {
+  color: #3797ef;
+}
+.this-week-container .this-week .btn {
+  margin-left: auto;
+  width: 90px;
+  height: 35px;
+  background-color: #FFF;
+  border: 1px solid rgba(60, 60, 67, 0.18);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+.this-week-container .this-week .btn-blue {
+  background-color: #3797ef;
+  color: #FFF;
+}
+.this-week-container .reply {
+  display: flex;
+  margin-left: 70px;
+}
+.this-week-container .reply img {
+  width: 12px;
+  height: 10px;
+  margin-right: 10px;
+}
+.this-week-container .reply p {
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 600;
+}
+
+.tab-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 50px;
+  background-color: #fafafa;
+  bottom: 0;
+  position: sticky;
+  padding: 0 26px;
+}
+.tab-bar .img-tab-bar {
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=like.css.map */
