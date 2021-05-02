@@ -21,7 +21,7 @@ a {
 }
 
 .this-week-container .this-week p span, .new-today-container .new-today p span {
-  color: gray;
+  color: rgba(0, 0, 0, 0.4);
   padding-left: 3px;
 }
 
@@ -86,7 +86,7 @@ header .you {
 .new-today-container .new-today .zackjhon {
   position: absolute;
   margin-left: 20px;
-  border: 3px solid white;
+  border: 3px solid #FFFF;
   border-radius: 50%;
 }
 
@@ -106,7 +106,7 @@ header .you {
   margin-left: auto;
   width: 90px;
   height: 35px;
-  background-color: #FFF;
+  background-color: #FFFF;
   border: 1px solid rgba(60, 60, 67, 0.18);
   border-radius: 4px;
   cursor: pointer;
@@ -115,7 +115,7 @@ header .you {
 }
 .this-week-container .this-week .btn-blue {
   background-color: #3797ef;
-  color: #FFF;
+  color: #FFFF;
 }
 .this-week-container .reply {
   display: flex;
