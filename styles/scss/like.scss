@@ -51,18 +51,22 @@ header {
             }
         }
        .liked-photo {
-        margin-left: auto;
+        @extend %left-photos;
     } 
         .double-liked {
         position: relative;
         margin-bottom: 30px;
         margin-right: 20px;
+        width: 45px;
+        height: 45px;
      }
         .zackjhon {
          position: absolute;
          margin-left: 20px;
-         border: 3px solid $white;
+         border: 3px solid $highlight-contrast-color;
          border-radius: 50%;
+         width: 50px;
+        height: 50px;
     }
 }
     
@@ -78,8 +82,8 @@ header {
     .this-week {
         @extend %equal-style;
 
-        .mentioned-photo {
-            margin-left: auto;
+        .liked-photo {
+            @extend %left-photos;
         }
 
         p {
@@ -96,7 +100,7 @@ header {
             margin-left: auto;
             width: 90px;
             height: 35px;
-            background-color: $white;
+            background-color: $highlight-contrast-color;
             border: 1px solid rgba(60, 60, 67, 0.18);
             border-radius: 4px;
             cursor: pointer;
@@ -105,7 +109,7 @@ header {
         }
         .btn-blue {
             background-color: $highlight-color;
-            color: $white;
+            color: $highlight-contrast-color;
         }
     }
     .reply {

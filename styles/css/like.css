@@ -31,6 +31,12 @@ a {
   font-weight: 600;
 }
 
+.this-week-container .this-week .liked-photo, .new-today-container .new-today .liked-photo {
+  margin-left: auto;
+  width: 44px;
+  height: 44px;
+}
+
 html {
   font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
@@ -75,26 +81,24 @@ header .you {
 .new-today-container .new-today p {
   padding: 0px 12px;
 }
-.new-today-container .new-today .liked-photo {
-  margin-left: auto;
-}
 .new-today-container .new-today .double-liked {
   position: relative;
   margin-bottom: 30px;
   margin-right: 20px;
+  width: 45px;
+  height: 45px;
 }
 .new-today-container .new-today .zackjhon {
   position: absolute;
   margin-left: 20px;
-  border: 3px solid #FFFF;
+  border: 3px solid #fff;
   border-radius: 50%;
+  width: 50px;
+  height: 50px;
 }
 
 .this-week-container {
   width: 100%;
-}
-.this-week-container .this-week .mentioned-photo {
-  margin-left: auto;
 }
 .this-week-container .this-week p {
   padding: 0px 12px;
@@ -106,7 +110,7 @@ header .you {
   margin-left: auto;
   width: 90px;
   height: 35px;
-  background-color: #FFFF;
+  background-color: #fff;
   border: 1px solid rgba(60, 60, 67, 0.18);
   border-radius: 4px;
   cursor: pointer;
@@ -115,7 +119,7 @@ header .you {
 }
 .this-week-container .this-week .btn-blue {
   background-color: #3797ef;
-  color: #FFFF;
+  color: #fff;
 }
 .this-week-container .reply {
   display: flex;
