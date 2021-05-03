@@ -65,6 +65,7 @@ header .header-logo {
 .stories-container .story-item .content-img .story-img {
   border: 2px solid #fff;
   object-fit: cover;
+  cursor: pointer;
   width: 56px;
   height: 56px;
   border-radius: 50%;
@@ -113,6 +114,7 @@ header .header-logo {
 .feed-container .post .action-container .action-icons .icons {
   height: 20px;
   width: auto;
+  cursor: pointer;
 }
 .feed-container .post .action-container .action-icons .icons:last-child {
   margin-left: auto;
@@ -141,7 +143,7 @@ header .header-logo {
   width: 100%;
   min-height: 50px;
   background-color: #fafafa;
-  position: fixed;
+  position: sticky;
   bottom: 0;
   padding: 0 26px;
   display: flex;

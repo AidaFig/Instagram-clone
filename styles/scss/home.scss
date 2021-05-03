@@ -45,6 +45,7 @@ header {
         .story-img {
           border: 2px solid $highlight-contrast-color;
           object-fit: cover;
+          cursor: pointer;
           @include box-round(56px);
         }
         .alert-live {
@@ -93,6 +94,7 @@ header {
                  .icons {
                      height: 20px;
                      width: auto;
+                     cursor: pointer;
                      
                      &:last-child {
                          margin-left: auto;
@@ -129,7 +131,7 @@ header {
     width: 100%;
     min-height: 50px;
     background-color: $input-color;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     padding: 0 26px;
 
