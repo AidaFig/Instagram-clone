@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: black;
+}
+
+html {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #FAFAFA;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 0px;
+}
+header .locked-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  font-size: 16px;
+  font-weight: 600;
+}
+header .locked-profile .locked {
+  margin-right: 8.75px;
+  height: 11.75px;
+}
+header .locked-profile .arrow {
+  margin-left: 4px;
+  width: 10.7px;
+  height: 6.2px;
+}
+header .menu {
+  width: 33%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 16px;
+}
+
+.numbers {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+.numbers img {
+  width: 86px;
+  height: 86px;
+}
+.numbers span {
+  font-size: 16px;
+  font-weight: 600;
+}
+.numbers p {
+  font-size: 13px;
+}
+
+.bio {
+  margin: 12px 16px;
+  line-height: 17px;
+}
+.bio .name {
+  font-size: 14px;
+  font-weight: 600;
+}
+.bio p {
+  font-size: 14px;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button .edit-profile {
+  margin: 10px 16px;
+  width: 100%;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid rgba(60, 60, 67, 0.18);
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.tab-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 50px;
+  background-color: #fafafa;
+  bottom: 0;
+  position: fixed;
+  padding: 0 26px;
+  box-sizing: border-box;
+}
+.tab-bar .img-tab-bar {
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=profile.css.map */
