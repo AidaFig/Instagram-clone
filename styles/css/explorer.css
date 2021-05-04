@@ -111,5 +111,9 @@ header .input input::placeholder {
   height: 23px;
   cursor: pointer;
 }
+.tab-bar .profile {
+  border-radius: 50%;
+  object-fit: cover;
+}
 
 /*# sourceMappingURL=explorer.css.map */

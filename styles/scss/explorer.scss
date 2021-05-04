@@ -102,4 +102,8 @@ header {
         height: 23px;
         cursor: pointer;
     }
+    .profile {
+        border-radius: 50%;
+        object-fit: cover;
+    }
 }

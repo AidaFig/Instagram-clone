@@ -75,6 +75,8 @@ header .menu {
 .numbers .content-img img {
   width: 87px;
   height: 87px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 .numbers span {
   font-size: 16px;
@@ -188,6 +190,10 @@ header .menu {
   width: 23px;
   height: 23px;
   cursor: pointer;
+}
+.tab-bar .profile {
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=profile.css.map */
