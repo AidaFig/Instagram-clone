@@ -90,7 +90,10 @@ header .input input::placeholder {
   margin: 10px 0;
 }
 .galery-container .photos {
+  width: 124px;
+  height: 119px;
   flex-basis: 124px;
+  object-fit: cover;
   flex-grow: 1;
 }
 

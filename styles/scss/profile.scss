@@ -4,17 +4,14 @@ body {
     background-color: #FAFAFA;
 }
 header {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+
+    @include flex (row, flex-end, center);
     padding: 20px 0px;
 
 
     .locked-profile  {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+        @include flex (row, center, center);
         width: 33%;
         font-size: 16px;
         font-weight: 600;
@@ -40,25 +37,27 @@ header {
 .numbers {
     
     width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+
+    @include flex (row, space-evenly, center);
     gap: 10px;
     text-align: center;
 
+
+    
     .content-img {
+
+        @include flex(row, center, center);
         width: 97px;
         height: 97px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         border-radius: 50%;
         background: linear-gradient(150deg, #833ab4, #fd1d1d, #fcb045);
         position: relative;
+        
 
         img {
             width: 87px;
             height: 87px;
+            border: 2px solid white;
             border-radius: 50%;
             object-fit: cover;
         }
@@ -85,10 +84,9 @@ header {
     }
 }
 .button  {
+
+    @include flex (row, center, center);
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     
     .edit-profile {
         margin: 10px 16px;
@@ -111,9 +109,8 @@ header {
         gap: 22px;
     
         .content-img {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+           
+            @include flex (row, center, center);
             width: 64px;
             height: 64px;
             border: 1px solid #C7C7CC;
@@ -160,12 +157,12 @@ header {
     margin-top: 2px;
 
     .img-feed {
+        width: 124px;
+        height: 124px;
         flex-basis: 124px;
         flex-grow: 1;
 
     }
-
-
 }
 .tab-bar {
     @include flex (row, space-between, center);
@@ -187,5 +184,4 @@ header {
         border-radius: 50%;
         object-fit: cover;
     }
-
 }
