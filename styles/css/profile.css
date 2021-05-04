@@ -62,9 +62,19 @@ header .menu {
   gap: 10px;
   text-align: center;
 }
-.numbers img {
-  width: 86px;
-  height: 86px;
+.numbers .content-img {
+  width: 97px;
+  height: 97px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: linear-gradient(150deg, #833ab4, #fd1d1d, #fcb045);
+  position: relative;
+}
+.numbers .content-img img {
+  width: 87px;
+  height: 87px;
 }
 .numbers span {
   font-size: 16px;
@@ -100,6 +110,65 @@ header .menu {
   border: 1px solid rgba(60, 60, 67, 0.18);
   border-radius: 6px;
   box-sizing: border-box;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.destaques {
+  width: 100%;
+}
+.destaques .highlights {
+  display: flex;
+  padding: 0px 16px;
+  gap: 22px;
+}
+.destaques .highlights .content-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  border: 1px solid #C7C7CC;
+  border-radius: 50%;
+}
+.destaques .highlights .highlights-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+.destaques .subtitles {
+  display: flex;
+  padding: 5px 35px;
+  gap: 47px;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.options .mosaic-tag {
+  width: 186px;
+  height: 44px;
+  padding: 10px 0px;
+}
+.options .mosaic {
+  border-bottom: 1.5px solid black;
+}
+
+.container-feed {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5px;
+  margin-top: 2px;
+}
+.container-feed .img-feed {
+  flex-basis: 124px;
+  flex-grow: 1;
 }
 
 .tab-bar {
@@ -111,7 +180,7 @@ header .menu {
   min-height: 50px;
   background-color: #fafafa;
   bottom: 0;
-  position: fixed;
+  position: sticky;
   padding: 0 26px;
   box-sizing: border-box;
 }
