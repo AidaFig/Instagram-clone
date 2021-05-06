@@ -2,15 +2,38 @@
 
 
 .container-log {
+
+    @include flex (column, center, center);
     height: 100%;
     margin: 0 16px;
 
-    @include flex (column, center, center);
+    @media (min-width:$breakpoint) {
+        flex-direction: row;
+        gap: 40px;
+        background-color: $background-secondary;
+    }
 
+    .insta-mock {
+        display: none;
+
+        @media (min-width: $breakpoint) {
+            display: block;
+        }
+    }
+    
     .form-log {
-        width: 100%;
-
+        
         @include flex (column, center, center);
+        width: 100%;
+        
+        @media (min-width: $breakpoint) {
+            width: 350px;
+            background-color: $highlight-contrast-color;
+            padding: 30px 40px;
+            box-sizing: border-box;
+            border: 1px solid rgba(219, 219, 219, 1);
+        }
+
         
         .logo-form {
             width: 164px;

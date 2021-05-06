@@ -1,12 +1,24 @@
 @import "./styles.scss";
 
+body {
+    @media (min-width: $breakpoint) {
+      background-color: #fafafa;
+    }
+  }
 header {
-    background-color: $input-color;
+    background-color: $background-secondary;
     width: 100%;
     min-height: 55px;
     padding: 0px 6px;
+    margin-bottom: 24px;
 
     @include flex (row, space-between, center);
+
+    @media (min-width: $breakpoint) {
+        background-color: $highlight-contrast-color;
+        border: 1px solid rgba(219, 219, 219, 1);
+       
+    }
 
     .header-icon {
         width: 30px;
@@ -18,134 +30,242 @@ header {
         height: 35px;
     }
 }
-
-.stories-container {
+main {
     display: flex;
-    padding: 9px 10px;
-    gap: 20px;
-    overflow-x: auto;
-    border: 1px solid $border;
-  
-    &::-webkit-scrollbar {
-      display: none;
+    
+    @media (min-width: 768px){
+        max-width: 935px;
+        margin: auto;
+        gap: 28px;
+        
     }
-  
-    .story-item {
-      text-align: center;
-      .content-img {
-        width: 64px;
-        height: 64px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(190deg, #833ab4 10%, #fd1d1d, #fcb045);
-        position: relative;
-        margin-bottom: 5px;
-        .story-img {
-          border: 2px solid $highlight-contrast-color;
-          object-fit: cover;
-          cursor: pointer;
-          @include box-round(56px);
-        }
-        .alert-live {
-          bottom: -3px;
-          padding: 2px 4px;
-          border-radius: 3px;
-          position: absolute;
-          border: 1px solid $highlight-contrast-color;
-          color: $highlight-contrast-color;
-          background: linear-gradient(190deg, #833ab4, #fd1d1d, #fcb045);
-        }
-      }
-    }
-  }
-
-.feed-container {
-    display: flex;
-    flex-direction: column;
-    .post {
+    .page-container{
         width: 100%;
-        
-        .card-header {
+
+        .stories-container {
             display: flex;
-            align-items: center;
+            padding: 9px 10px;
+            gap: 20px;
+            overflow-x: auto;
+            border: 1px solid $border;
+            
+            @media (min-width: $breakpoint){ 
+                background-color: $highlight-contrast-color;
+                margin-bottom: 24px;
+                border-radius: 3px;
+                border: 1px solid rgba(219, 219, 219, 1);
+            }
+            
+            
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            
+            .story-item {
+                text-align: center;
+                .content-img {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: linear-gradient(190deg, #833ab4 10%, #fd1d1d, #fcb045);
+                    position: relative;
+                    margin-bottom: 5px;
+                    .story-img {
+                        border: 2px solid $highlight-contrast-color;
+                        object-fit: cover;
+                        cursor: pointer;
+                        @include box-round(56px);
+                    }
+                    .alert-live {
+                        bottom: -3px;
+                        padding: 2px 4px;
+                        border-radius: 3px;
+                        position: absolute;
+                        border: 1px solid $highlight-contrast-color;
+                        color: $highlight-contrast-color;
+                        background: linear-gradient(190deg, #833ab4, #fd1d1d, #fcb045);
+                    }
+                }
+            }
+        }
         
-            img {
-                margin: 10px 10px;
-            }
-            .more-icon {
-                margin-left: auto;
-                cursor: pointer;
-            }
-        }
-        .card-photo {
+        .feed-container {
+            display: flex;
+            flex-direction: column;
             width: 100%;
-            height: 375px;
-            object-fit: cover;
-        }
-        .action-container {
-            padding: 12px 15px;
-
-            .action-icons {
-                display: flex;
-                gap: 17.5px;
-
-                 .icons {
-                     height: 20px;
-                     width: auto;
-                     cursor: pointer;
-                     
-                     &:last-child {
-                         margin-left: auto;
-                     }
-                 }
-
+            
+            @media (min-width:$breakpoint) {
+                gap: 60px;
+                margin-bottom: 60px;
             }
-          .likes-info {
-              display: flex;
-              align-items: center;
-              padding: 12px 0 5px;
+            .post {
+                display: flex;
+                flex-direction: column;
+                
+                @media (min-width:$breakpoint) {
+                    background-color: $highlight-contrast-color;
+                    border-radius: 3px;
+                    border: 1px solid rgba(219, 219, 219, 1);
+                    
+                    
+                }
+                
+                .card-header {
+                    display: flex;
+                    align-items: center;
+                    
+                    img {
+                        margin: 10px 10px;
+                    }
+                    .more-icon {
+                        margin-left: auto;
+                        cursor: pointer;
+                    }
+                }
+                .card-photo {
+                    width: 100%;
+                    height: 375px;
+                    object-fit: cover;
+                }
+                .action-container {
+                    padding: 12px 15px;
+                    
+                    .action-icons {
+                        display: flex;
+                        gap: 17.5px;
+                        
+                        .icons {
+                            height: 20px;
+                            width: auto;
+                            cursor: pointer;
+                            
+                            &:last-child {
+                                margin-left: auto;
+                            }
+                        }
+                        
+                    }
+                    .likes-info {
+                        display: flex;
+                        align-items: center;
+                        padding: 12px 0 5px;
+                        
+                        .people-likes {
+                            width: 17px;
+                            height: 17px;
+                            margin-right: 6.5px;
+                        }
+                        .likes-quantity {
+                            font-size: 1.2rem;
+                        }
+                    } 
+                    .subtitle {
+                        font-size: 1.2rem;
+                        
+                        span {
+                            color: $highlight-color;
+                        }
+                    } 
+                }
+            }
+        }
+    }   
+}
 
-              .people-likes {
-                  width: 17px;
-                  height: 17px;
-                  margin-right: 6.5px;
-              }
-              .likes-quantity {
-                  font-size: 1.2rem;
-              }
-          } 
-          .subtitle {
-              font-size: 1.2rem;
+.aside-container {
+    display: none;
+    min-width: 300px;
 
-              span {
-                  color: $highlight-color;
-              }
-          } 
+    @include flex (column, flex-start, flex-start );
+
+    @media(min-width: 768px) {
+        display: block;
+    }
+
+    .user-infos {
+        @include flex (row, flex-start, center);
+        width: 100%;
+        margin-bottom: 20px;
+
+        img {
+            @include box-round (56px);
+            margin-right: 15px;
+            
+        }
+        .user-name {
+            font-weight: 600;
+            font-size: 1.4rem;
+            margin-bottom: 1.5px;
+        }
+        .user-fullname {
+            color: #8e8e8e;
+            font-size: 1.4rem;
+        }
+        .logout-action {
+            @include action;
+            margin-left: auto;
+        }
+    }
+
+    .suggestions-container {
+        @include flex (column, flex-start, flex-start);
+        width: 100%;
+
+        .suggestion-title {
+            color: #8e8e8e;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .suggestion {
+            @include flex (row, flex-start, center);
+            width: 100%;
+            margin-bottom: 10px;
+
+            img {
+                @include box-round(32px);
+                margin-right: 15px;
+            }
+            .follow-action {
+                @include action;
+                margin-left: auto;
+            }
+            .suggestion-name {
+                font-size: 1.4rem;
+            }
+            .suggestion-common-followers {
+                color: #8e8e8e;
+                font-size: 1.2rem;
+            }
         }
     }
 }
+    
+    .tab-bar {
+        width: 100%;
+        min-height: 50px;
+        background-color: $background-secondary;
+        position: sticky;
+        bottom: 0;
+        padding: 0 26px;
+    
+        @include flex (row, space-between, center);
 
-.tab-bar {
-    width: 100%;
-    min-height: 50px;
-    background-color: $input-color;
-    position: sticky;
-    bottom: 0;
-    padding: 0 26px;
-
-    @include flex (row, space-between, center);
-
-    .img-tab-bar {
-        width: 23px;
-        height: 23px;
-        cursor: pointer;
+        @media(min-width:$breakpoint) {
+            background-color: $highlight-contrast-color;
+        }
+        
+        .img-tab-bar {
+            width: 23px;
+            height: 23px;
+            cursor: pointer;
 
     }
-    .profile {
-        border-radius: 50%;
-        object-fit: cover;
+        .profile {
+            border-radius: 50%;
+            object-fit: cover;
     }
 }
 
