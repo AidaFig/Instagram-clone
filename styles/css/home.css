@@ -217,12 +217,12 @@ main .page-container .feed-container .post .action-container .subtitle span {
 }
 .aside-container .user-infos .user-name {
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-bottom: 1.5px;
 }
 .aside-container .user-infos .user-fullname {
   color: #8e8e8e;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .aside-container .user-infos .logout-action {
   color: #0095f6;
@@ -264,7 +264,7 @@ main .page-container .feed-container .post .action-container .subtitle span {
   margin-left: auto;
 }
 .aside-container .suggestions-container .suggestion .suggestion-name {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .aside-container .suggestions-container .suggestion .suggestion-common-followers {
   color: #8e8e8e;
@@ -286,6 +286,7 @@ main .page-container .feed-container .post .action-container .subtitle span {
 @media (min-width: 768px) {
   .tab-bar {
     background-color: #fff;
+    border: 1px solid #dbdbdb;
   }
 }
 .tab-bar .img-tab-bar {

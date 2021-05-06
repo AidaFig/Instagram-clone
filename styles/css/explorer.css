@@ -19,18 +19,48 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  background-color: #fafafa;
+}
+
 header {
+  width: 100%;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  header {
+    border: 1px solid #dbdbdb;
+    margin-bottom: 24px;
+  }
+}
+
+.header {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 10px;
 }
-header .qrcode-reader {
+@media (min-width: 768px) {
+  .header {
+    max-width: 935px;
+    margin: auto;
+  }
+}
+.header .insta-logo {
+  height: 40px;
+  display: none;
+}
+@media (min-width: 768px) {
+  .header .insta-logo {
+    display: block;
+  }
+}
+.header .qrcode-reader {
   width: 20px;
   height: 20px;
 }
-header .input {
+.header .input {
   display: flex;
   align-items: center;
   padding: 10px 10px;
@@ -40,17 +70,17 @@ header .input {
   height: 36px;
   border-radius: 10px;
 }
-header .input .icon-input {
+.header .input .icon-input {
   width: 20px;
   height: 20px;
 }
-header .input input {
+.header .input input {
   height: 36px;
   width: 184px;
   border: none;
   background-color: rgba(239, 237, 237, 0.877);
 }
-header .input input::placeholder {
+.header .input input::placeholder {
   color: rgba(60, 60, 67, 0.6);
   font-size: 16px;
   padding: 0 6px;
@@ -62,6 +92,13 @@ header .input input::placeholder {
   gap: 6px;
   overflow-x: auto;
   padding: 0 10px;
+}
+@media (min-width: 768px) {
+  .categories-container {
+    max-width: 935px;
+    margin: auto;
+    margin-bottom: 24px;
+  }
 }
 .categories-container::-webkit-scrollbar {
   display: none;
@@ -89,6 +126,14 @@ header .input input::placeholder {
   gap: 1px;
   margin: 10px 0;
 }
+@media (min-width: 768px) {
+  .galery-container {
+    max-width: 935px;
+    margin: auto;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+}
 .galery-container .photos {
   width: 124px;
   height: 119px;
@@ -96,18 +141,31 @@ header .input input::placeholder {
   object-fit: cover;
   flex-grow: 1;
 }
+@media (min-width: 768px) {
+  .galery-container .photos {
+    width: 400px;
+    height: 200px;
+  }
+}
 
 .tab-bar {
   width: 100%;
   min-height: 50px;
   background-color: #fafafa;
-  position: sticky;
+  position: fixed;
   bottom: 0;
   padding: 0 26px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+@media (min-width: 768px) {
+  .tab-bar {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    position: sticky;
+  }
 }
 .tab-bar .img-tab-bar {
   width: 23px;
