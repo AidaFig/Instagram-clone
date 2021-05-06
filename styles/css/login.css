@@ -19,6 +19,10 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  background-color: #f2f2f2;
+}
+
 .container-log {
   display: flex;
   flex-direction: column;
@@ -48,24 +52,25 @@ html {
   justify-content: center;
   align-items: center;
   width: 100%;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  padding: 30px 0px;
 }
 @media (min-width: 768px) {
   .container-log .form-log {
     width: 350px;
-    background-color: #fff;
     padding: 30px 40px;
     box-sizing: border-box;
-    border: 1px solid #dbdbdb;
   }
 }
 .container-log .form-log .logo-form {
   width: 164px;
   height: 49px;
-  margin-bottom: 39px;
+  margin-bottom: 30px;
 }
 .container-log .form-log .input-form {
-  width: 100%;
-  height: 44px;
+  width: 258px;
+  height: 38px;
   box-sizing: border-box;
   margin: 6px 0;
   padding: 0px 15px;
@@ -74,16 +79,17 @@ html {
   background-color: #fafafa;
 }
 .container-log .form-log .input-form::placeholder {
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
 }
 .container-log .form-log .forgot-password {
   margin-top: 19px;
   align-self: flex-end;
+  padding-right: 43px;
   color: #3797ef;
 }
 .container-log .form-log .button {
-  width: 100%;
-  height: 44px;
+  width: 256px;
+  height: 38px;
   margin-top: 30px;
   border-radius: 5px;
   border: none;
@@ -97,11 +103,46 @@ html {
 .container-log .form-log .log-fb {
   font-size: 14px;
   align-items: center;
-  margin-top: 39px;
+  margin-top: 35px;
   color: #3797ef;
 }
 .container-log .form-log .log-fb img {
   margin-right: 10px;
+}
+.container-log .sign-up {
+  width: 350px;
+  height: 60px;
+  margin-top: 20px;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  text-align: center;
+  padding: 20px 20px;
+}
+.container-log .sign-up p {
+  font-size: 1.2rem;
+}
+.container-log .sign-up p a {
+  color: #3797ef;
+  font-weight: 600;
+}
+.container-log .get-the-app {
+  text-align: center;
+}
+.container-log .get-the-app p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+.container-log .get-the-app img {
+  width: 136px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.footer {
+  text-align: center;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.4);
+  word-spacing: 12px;
 }
 
 /*# sourceMappingURL=login.css.map */
