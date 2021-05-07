@@ -59,6 +59,7 @@ header {
 .header .qrcode-reader {
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 .header .input {
   display: flex;
@@ -78,7 +79,7 @@ header {
   height: 36px;
   width: 184px;
   border: none;
-  background-color: rgba(239, 237, 237, 0.877);
+  background: transparent;
 }
 .header .input input::placeholder {
   color: rgba(60, 60, 67, 0.6);
@@ -111,6 +112,7 @@ header {
   border-radius: 6px;
   padding: 10px 10px;
   text-align: center;
+  cursor: pointer;
 }
 .categories-container .categories-box .icon-categories {
   width: 12.75;

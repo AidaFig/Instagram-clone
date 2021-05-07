@@ -231,6 +231,7 @@ main {
             .follow-action {
                 @include action;
                 margin-left: auto;
+                cursor: pointer;
             }
             .suggestion-name {
                 font-size: 1.2rem;

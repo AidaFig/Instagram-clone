@@ -262,6 +262,7 @@ main .page-container .feed-container .post .action-container .subtitle span {
   font-weight: 600;
   text-decoration: none;
   margin-left: auto;
+  cursor: pointer;
 }
 .aside-container .suggestions-container .suggestion .suggestion-name {
   font-size: 1.2rem;

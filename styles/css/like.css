@@ -14,24 +14,24 @@ a {
   color: black;
 }
 
-.this-week-container .this-week, .new-today-container .new-today {
+.sections-container .this-week-container .this-week, .sections-container .new-today-container .new-today {
   display: flex;
   align-items: center;
   padding: 16px 16px;
 }
 
-.this-week-container .this-week p span, .new-today-container .new-today p span {
+.sections-container .this-week-container .this-week p span, .sections-container .new-today-container .new-today p span {
   color: rgba(0, 0, 0, 0.4);
   padding-left: 3px;
 }
 
-.this-week-container .activity-2, .new-today-container .activity {
+.sections-container .this-week-container .activity-2, .sections-container .new-today-container .activity {
   padding: 13px 16px;
   font-size: 16px;
   font-weight: 600;
 }
 
-.this-week-container .this-week .liked-photo, .new-today-container .new-today .liked-photo {
+.sections-container .this-week-container .this-week .liked-photo, .sections-container .new-today-container .new-today .liked-photo {
   margin-left: auto;
   width: 44px;
   height: 44px;
@@ -42,12 +42,28 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
+@media (min-width: 768px) {
+  body {
+    background-color: #fafafa;
+  }
+}
+
+@media (min-width: 768px) {
+  .sections-container {
+    max-width: 935px;
+    margin: auto;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    gap: 30px;
+    margin-bottom: 24px;
+  }
+}
+.sections-container header {
   display: flex;
   width: 100%;
   height: 80px;
 }
-header .following-you {
+.sections-container header .following-you {
   width: 100%;
   height: 80px;
   padding: 20px 20px;
@@ -55,40 +71,44 @@ header .following-you {
   font-size: 16px;
   font-weight: 600;
 }
-header .following {
+.sections-container header .following {
   color: rgba(0, 0, 0, 0.4);
 }
-header .you {
+.sections-container header .you {
   border-bottom: 1.5px solid black;
 }
-
-.follow-requests {
+.sections-container .follow-requests {
   width: 100%;
   height: 48px;
   padding: 14px 16px;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.follow-requests .span {
+.sections-container .follow-requests .span {
   font-size: 16px;
 }
-
-.new-today-container {
+.sections-container .new-today-container {
   width: 100%;
 }
-.new-today-container .new-today {
+.sections-container .new-today-container .new-today {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.new-today-container .new-today p {
+.sections-container .new-today-container .new-today p {
   padding: 0px 12px;
 }
-.new-today-container .new-today .double-liked {
+@media (min-width: 768px) {
+  .sections-container .new-today-container .new-today .liked-photo {
+    width: 80px;
+    height: 80px;
+  }
+}
+.sections-container .new-today-container .new-today .double-liked {
   position: relative;
   margin-bottom: 30px;
   margin-right: 20px;
   width: 45px;
   height: 45px;
 }
-.new-today-container .new-today .zackjhon {
+.sections-container .new-today-container .new-today .zackjhon {
   position: absolute;
   margin-left: 20px;
   border: 3px solid #fff;
@@ -96,17 +116,22 @@ header .you {
   width: 50px;
   height: 50px;
 }
-
-.this-week-container {
+.sections-container .this-week-container {
   width: 100%;
 }
-.this-week-container .this-week p {
+@media (min-width: 768px) {
+  .sections-container .this-week-container .this-week .liked-photo {
+    width: 80px;
+    height: 80px;
+  }
+}
+.sections-container .this-week-container .this-week p {
   padding: 0px 12px;
 }
-.this-week-container .this-week a {
+.sections-container .this-week-container .this-week a {
   color: #3797ef;
 }
-.this-week-container .this-week .btn {
+.sections-container .this-week-container .this-week .btn {
   margin-left: auto;
   width: 90px;
   height: 35px;
@@ -117,20 +142,26 @@ header .you {
   font-size: 14px;
   font-weight: 600;
 }
-.this-week-container .this-week .btn-blue {
+@media (min-width: 768px) {
+  .sections-container .this-week-container .this-week .btn {
+    width: 120px;
+    height: 40px;
+  }
+}
+.sections-container .this-week-container .this-week .btn-blue {
   background-color: #3797ef;
   color: #fff;
 }
-.this-week-container .reply {
+.sections-container .this-week-container .reply {
   display: flex;
   margin-left: 70px;
 }
-.this-week-container .reply img {
+.sections-container .this-week-container .reply img {
   width: 12px;
   height: 10px;
   margin-right: 10px;
 }
-.this-week-container .reply p {
+.sections-container .this-week-container .reply p {
   font-size: 11px;
   color: rgba(0, 0, 0, 0.4);
   font-weight: 600;
@@ -147,6 +178,12 @@ header .you {
   bottom: 0;
   position: sticky;
   padding: 0 26px;
+}
+@media (min-width: 768px) {
+  .tab-bar {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+  }
 }
 .tab-bar .img-tab-bar {
   width: 23px;
