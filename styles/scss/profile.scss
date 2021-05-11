@@ -99,12 +99,13 @@ header {
 
 }
 .user-infos {
-    @include flex (row, flex-start, flex-start);
+    @include flex (row, flex-start, center);
     width: 100%;
     gap: 50px;
     text-align: center;
 
     @media (min-width: $breakpoint) {
+        @include flex (row, flex-start, stretch);
         max-width: 935px;
         margin: auto;
         margin-bottom: 40px;
@@ -151,6 +152,7 @@ header {
             @media (min-width:$breakpoint) {
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 gap: 6px;
 
                 p {
