@@ -103,12 +103,14 @@ header .header .input input::placeholder {
   margin-left: 4px;
   width: 10.7px;
   height: 6.2px;
+  cursor: pointer;
 }
 .locked-username .menu {
   width: 33%;
   display: flex;
   justify-content: flex-end;
   padding: 0 16px;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .locked-username .menu {
@@ -116,23 +118,24 @@ header .header .input input::placeholder {
   }
 }
 
-.numbers {
-  width: 100%;
+.user-infos {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 10px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  gap: 50px;
   text-align: center;
 }
 @media (min-width: 768px) {
-  .numbers {
+  .user-infos {
     max-width: 935px;
     margin: auto;
-    gap: 0px;
+    margin-bottom: 40px;
+    gap: 100px;
   }
 }
-.numbers .content-img {
+.user-infos .content-img {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -140,16 +143,17 @@ header .header .input input::placeholder {
   width: 97px;
   height: 97px;
   border-radius: 50%;
+  margin-left: 16px;
   background: linear-gradient(150deg, #833ab4, #fd1d1d, #fcb045);
   position: relative;
 }
 @media (min-width: 768px) {
-  .numbers .content-img {
+  .user-infos .content-img {
     width: 160px;
     height: 160px;
   }
 }
-.numbers .content-img img {
+.user-infos .content-img img {
   width: 87px;
   height: 87px;
   border: 2px solid white;
@@ -157,16 +161,89 @@ header .header .input input::placeholder {
   object-fit: cover;
 }
 @media (min-width: 768px) {
-  .numbers .content-img img {
+  .user-infos .content-img img {
     width: 150px;
     height: 150px;
   }
 }
-.numbers span {
+.user-infos .numbers {
+  display: flex;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .user-infos .numbers {
+    display: flex;
+  }
+}
+@media (min-width: 768px) {
+  .user-infos .numbers .ig-infos {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .user-infos .numbers .ig-infos p {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 768px) {
+  .user-infos .user-infos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.user-infos .user-infos-container .user-settings {
+  display: none;
+}
+@media (min-width: 768px) {
+  .user-infos .user-infos-container .user-settings {
+    display: flex;
+    gap: 20px;
+  }
+}
+.user-infos .user-infos-container .user-settings .user {
+  font-size: 1.9em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.user-infos .user-infos-container .user-settings .btn-desktop {
+  width: 99.3px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid rgba(60, 60, 67, 0.18);
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.user-infos .user-infos-container .settings-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.user-infos .user-infos-container .bio-desktop {
+  display: none;
+}
+@media (min-width: 768px) {
+  .user-infos .user-infos-container .bio-desktop {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+  }
+}
+.user-infos .user-infos-container .bio-desktop .name {
+  font-size: 14px;
+  font-weight: 600;
+  font-size: 1.4em;
+  margin-bottom: 8px;
+}
+.user-infos .user-infos-container .bio-desktop p {
+  font-size: 1.4em;
+}
+.user-infos span {
   font-size: 16px;
   font-weight: 600;
 }
-.numbers p {
+.user-infos p {
   font-size: 13px;
 }
 
@@ -182,10 +259,7 @@ header .header .input input::placeholder {
 }
 @media (min-width: 768px) {
   .bio-btn .bio {
-    margin-top: 0px;
-    padding-left: 395px;
-    display: flex;
-    flex-direction: column;
+    display: none;
   }
 }
 .bio-btn .bio .name {
@@ -212,10 +286,11 @@ header .header .input input::placeholder {
   box-sizing: border-box;
   font-size: 13px;
   font-weight: 600;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .bio-btn .button .edit-profile {
-    width: 500px;
+    display: none;
   }
 }
 
@@ -226,6 +301,7 @@ header .header .input input::placeholder {
   .destaques {
     max-width: 935px;
     margin: auto;
+    margin-bottom: 40px;
   }
 }
 .destaques .highlights {
@@ -247,6 +323,7 @@ header .header .input input::placeholder {
   width: 56px;
   height: 56px;
   border-radius: 50%;
+  cursor: pointer;
 }
 .destaques .subtitles {
   display: flex;
@@ -272,9 +349,11 @@ header .header .input input::placeholder {
   width: 186px;
   height: 44px;
   padding: 10px 0px;
+  cursor: pointer;
 }
 .options .mosaic {
   border-bottom: 1.5px solid black;
+  cursor: pointer;
 }
 
 .container-feed {

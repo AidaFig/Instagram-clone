@@ -81,6 +81,7 @@ header {
             margin-left: 4px;
             width: 10.7px;
             height: 6.2px;
+            cursor: pointer;
         }
     }
 
@@ -89,6 +90,7 @@ header {
         display: flex;
         justify-content: flex-end;
         padding: 0 16px;
+        cursor: pointer;
 
         @media (min-width: $breakpoint) {
             display: none;
@@ -96,18 +98,17 @@ header {
     }
 
 }
-.numbers {
-    
+.user-infos {
+    @include flex (row, flex-start, flex-start);
     width: 100%;
-
-    @include flex (row, space-evenly, center);
-    gap: 10px;
+    gap: 50px;
     text-align: center;
 
     @media (min-width: $breakpoint) {
         max-width: 935px;
         margin: auto;
-        gap: 0px;
+        margin-bottom: 40px;
+        gap: 100px;
     }
     
     .content-img {
@@ -116,6 +117,7 @@ header {
         width: 97px;
         height: 97px;
         border-radius: 50%;
+        margin-left: 16px;
         background: linear-gradient(150deg, #833ab4, #fd1d1d, #fcb045);
         position: relative;
 
@@ -124,7 +126,6 @@ header {
             height: 160px;
         }
         
-
         img {
             width: 87px;
             height: 87px;
@@ -135,6 +136,82 @@ header {
             @media (min-width:$breakpoint) {
                 width: 150px;
                 height: 150px;
+            }
+        }
+    }
+    .numbers {
+        display: flex;
+        gap: 30px;
+
+        @media (min-width:$breakpoint) {
+            display: flex;
+        }
+
+        .ig-infos {
+            @media (min-width:$breakpoint) {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+
+                p {
+                    font-size: 1.4em;
+                }
+            }
+        }
+    
+    }
+    .user-infos-container {
+        
+        @media (min-width:$breakpoint) {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .user-settings {
+            display: none;
+            //margin-bottom: 10px;
+            
+            @media (min-width:$breakpoint) {
+                display: flex;
+                gap: 20px;
+                
+            }
+            .user {
+                font-size: 1.9em;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .btn-desktop {
+                width: 99.3px;
+                height: 30px;
+                background-color: $highlight-contrast-color;
+                border: 1px solid rgba(60, 60, 67, 0.18);
+                border-radius: 4px;
+                font-weight: 600;
+                cursor: pointer;
+            }
+        }
+        .settings-icon {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+        .bio-desktop {
+            display: none;
+
+            @media (min-width:$breakpoint) {
+                display: flex;
+                flex-direction: column;
+                text-align: justify;
+            }
+            .name {
+                font-size: 14px;
+                font-weight: 600;
+                font-size: 1.4em;
+                margin-bottom: 8px;
+            }
+            p {
+                font-size: 1.4em;
             }
         }
     }
@@ -158,10 +235,7 @@ header {
         line-height: 17px;
         
         @media (min-width:$breakpoint) {
-            margin-top: 0px;
-            padding-left: 395px;
-            display: flex;
-            flex-direction: column;
+            display: none;
             
         }
         
@@ -188,9 +262,10 @@ header {
             box-sizing: border-box;
             font-size: 13px;
             font-weight: 600;
+            cursor: pointer;
 
             @media (min-width:$breakpoint) {
-                width: 500px;
+                display: none;
             }
         }
     }
@@ -201,12 +276,14 @@ header {
     @media (min-width:$breakpoint) {
         max-width: 935px;
         margin: auto;
+        margin-bottom: 40px;
     }
 
     .highlights {
         display: flex;
         padding: 0px 16px;
-        gap: 22px;
+        gap: 22px;  
+
 
         .content-img {
            
@@ -220,6 +297,7 @@ header {
             width: 56px;
             height: 56px;
             border-radius: 50%;
+            cursor: pointer;
         }
 
     }
@@ -248,10 +326,12 @@ header {
         width: 186px;
         height: 44px;
         padding: 10px 0px;
+        cursor: pointer;
 
     }
     .mosaic {
         border-bottom: 1.5px solid black;
+        cursor: pointer;
     }
 }
 .container-feed {
