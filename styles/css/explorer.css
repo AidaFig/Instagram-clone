@@ -26,12 +26,8 @@ body {
 header {
   width: 100%;
   background-color: #fff;
-}
-@media (min-width: 768px) {
-  header {
-    border: 1px solid #dbdbdb;
-    margin-bottom: 24px;
-  }
+  border: 1px solid #dbdbdb;
+  margin-bottom: 24px;
 }
 
 .header {
@@ -48,8 +44,7 @@ header {
   }
 }
 .header .insta-logo {
-  height: 40px;
-  display: none;
+  height: 30px;
 }
 @media (min-width: 768px) {
   .header .insta-logo {
@@ -62,18 +57,23 @@ header {
   cursor: pointer;
 }
 .header .input {
-  display: flex;
-  align-items: center;
-  padding: 10px 10px;
-  border: none;
-  background-color: rgba(118, 118, 128, 0.12);
-  width: 327px;
-  height: 36px;
-  border-radius: 10px;
+  display: none;
+}
+@media (min-width: 768px) {
+  .header .input {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    border: none;
+    background-color: rgba(118, 118, 128, 0.12);
+    width: 215px;
+    height: 30px;
+    border-radius: 5px;
+  }
 }
 .header .input .icon-input {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
 }
 .header .input input {
   height: 36px;
@@ -83,7 +83,7 @@ header {
 }
 .header .input input::placeholder {
   color: rgba(60, 60, 67, 0.6);
-  font-size: 16px;
+  font-size: 14px;
   padding: 0 6px;
 }
 

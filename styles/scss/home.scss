@@ -9,6 +9,8 @@ body {
 header {
     background-color: $highlight-contrast-color;
     border: 1px solid $border-desktop;
+    width: 100%;
+    margin-bottom: 2px;
 
     @media (min-width: $breakpoint) {
         margin-bottom: 24px;
@@ -16,12 +18,12 @@ header {
     }
 
     .header {
-        background-color: $background-secondary;
-        width: 100%;
+        background-color: $highlight-contrast-color;
         min-height: 55px;
+        padding: 0px 6px;
         
         @include flex (row, space-between, center);
-    
+        
         @media (min-width: $breakpoint) {
             max-width: 935px;
             margin: auto;
@@ -30,13 +32,12 @@ header {
         }
         
         .interactions {
-            display: none;
-            
-            @media (min-width: $breakpoint){
+            //display: none;
+        
                 display: flex;
                 justify-content: space-between;
                 width: 222px;
-            }
+            
             .img-profile {
                 width: 23px;
                 height: 23px;
@@ -50,6 +51,7 @@ header {
             }
         }
         .header-icon {
+            display: none;
             width: 30px;
             height: 30px;
             
@@ -67,14 +69,14 @@ header {
                 padding: 10px 10px;
                 border: none;
                 background-color: rgba(118, 118, 128, 0.12);
-                width: 327px;
-                height: 36px;
-                border-radius: 10px;
+                width: 215px;
+                height: 30px;
+                border-radius: 5px;
             }
             
             .icon-input {
-                width: 20px;
-                height: 20px;
+                width: 15px;
+                height: 15px;
                 
             }
             
@@ -86,7 +88,7 @@ header {
                 
                 &::placeholder {
                     color: rgba(60, 60, 67, 0.6);
-                    font-size: 16px;
+                    font-size: 14px;
                     padding: 0 6px;
                 }
             }
