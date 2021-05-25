@@ -26,29 +26,92 @@ html {
 }
 
 header {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+}
+@media (min-width: 768px) {
+  header {
+    margin-bottom: 24px;
+  }
+}
+header .header {
   background-color: #f2f2f2;
   width: 100%;
   min-height: 55px;
-  padding: 0px 6px;
-  margin-bottom: 24px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 @media (min-width: 768px) {
-  header {
+  header .header {
+    max-width: 935px;
+    margin: auto;
     background-color: #fff;
-    border: 1px solid #dbdbdb;
   }
 }
-header .header-icon {
+header .header .interactions {
+  display: none;
+}
+@media (min-width: 768px) {
+  header .header .interactions {
+    display: flex;
+    justify-content: space-between;
+    width: 222px;
+  }
+}
+header .header .interactions .img-profile {
+  width: 23px;
+  height: 23px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+header .header .interactions img {
+  width: 22px;
+  height: 22px;
+}
+header .header .header-icon {
   width: 30px;
   height: 30px;
 }
-header .header-logo {
+@media (min-width: 768px) {
+  header .header .header-icon {
+    display: none;
+  }
+}
+header .header .input {
+  display: none;
+}
+@media (min-width: 768px) {
+  header .header .input {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    border: none;
+    background-color: rgba(118, 118, 128, 0.12);
+    width: 327px;
+    height: 36px;
+    border-radius: 10px;
+  }
+}
+header .header .input .icon-input {
+  width: 20px;
+  height: 20px;
+}
+header .header .input input {
+  height: 36px;
+  width: 184px;
+  border: none;
+  background: transparent;
+}
+header .header .input input::placeholder {
+  color: rgba(60, 60, 67, 0.6);
+  font-size: 16px;
+  padding: 0 6px;
+}
+header .header .header-logo {
   width: 95px;
-  height: 35px;
+  height: 30px;
 }
 
 main {
@@ -189,15 +252,15 @@ main .page-container .feed-container .post .action-container .subtitle span {
 
 .aside-container {
   display: none;
-  min-width: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
 @media (min-width: 768px) {
   .aside-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     display: block;
+    min-width: 300px;
   }
 }
 .aside-container .user-infos {
@@ -287,6 +350,7 @@ main .page-container .feed-container .post .action-container .subtitle span {
 }
 @media (min-width: 768px) {
   .tab-bar {
+    display: none;
     background-color: #fff;
     border: 1px solid #dbdbdb;
   }

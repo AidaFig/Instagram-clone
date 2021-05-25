@@ -5,35 +5,103 @@ body {
       background-color: #fafafa;
     }
   }
-header {
-    background-color: $background-secondary;
-    width: 100%;
-    min-height: 55px;
-    padding: 0px 6px;
-    margin-bottom: 24px;
 
-    @include flex (row, space-between, center);
+header {
+    background-color: $highlight-contrast-color;
+    border: 1px solid $border-desktop;
 
     @media (min-width: $breakpoint) {
-        background-color: $highlight-contrast-color;
-        border: 1px solid $border-desktop;
+        margin-bottom: 24px;
+
+    }
+
+    .header {
+        background-color: $background-secondary;
+        width: 100%;
+        min-height: 55px;
         
-    }
+        @include flex (row, space-between, center);
+    
+        @media (min-width: $breakpoint) {
+            max-width: 935px;
+            margin: auto;
+            background-color: $highlight-contrast-color;
 
-    .header-icon {
-        width: 30px;
-        height: 30px;
-    }
+        }
+        
+        .interactions {
+            display: none;
+            
+            @media (min-width: $breakpoint){
+                display: flex;
+                justify-content: space-between;
+                width: 222px;
+            }
+            .img-profile {
+                width: 23px;
+                height: 23px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
 
-    .header-logo {
-        width: 95px;
-        height: 35px;
+            img {
+                width: 22px;
+                height: 22px;
+            }
+        }
+        .header-icon {
+            width: 30px;
+            height: 30px;
+            
+            @media  (min-width: $breakpoint){
+                display: none;
+
+            }
+        }
+        .input{
+            display: none;
+            
+            @media (min-width: $breakpoint) {
+                display: flex;
+                align-items: center;
+                padding: 10px 10px;
+                border: none;
+                background-color: rgba(118, 118, 128, 0.12);
+                width: 327px;
+                height: 36px;
+                border-radius: 10px;
+            }
+            
+            .icon-input {
+                width: 20px;
+                height: 20px;
+                
+            }
+            
+            input {
+                height: 36px;
+                width: 184px;
+                border: none;
+                background: transparent;
+                
+                &::placeholder {
+                    color: rgba(60, 60, 67, 0.6);
+                    font-size: 16px;
+                    padding: 0 6px;
+                }
+            }
+        }
+        
+        .header-logo {
+            width: 95px;
+            height: 30px;
+        }
     }
 }
 main {
     display: flex;
     
-    @media (min-width: 768px){
+    @media (min-width: $breakpoint){
         max-width: 935px;
         margin: auto;
         gap: 28px;
@@ -177,12 +245,13 @@ main {
 
 .aside-container {
     display: none;
-    min-width: 300px;
+    
+    
+    @media(min-width: $breakpoint) {
+        @include flex (column, flex-start, flex-start );
 
-    @include flex (column, flex-start, flex-start );
-
-    @media(min-width: 768px) {
         display: block;
+        min-width: 300px;
     }
 
     .user-infos {
@@ -256,6 +325,7 @@ main {
         @include flex (row, space-between, center);
 
         @media(min-width:$breakpoint) {
+            display: none;
             background-color: $highlight-contrast-color;
             border: 1px solid $border-desktop;
         }
