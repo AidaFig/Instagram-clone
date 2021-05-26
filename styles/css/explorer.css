@@ -51,10 +51,20 @@ header {
     display: block;
   }
 }
-.header .qrcode-reader {
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
+.header .interactions {
+  display: flex;
+  justify-content: space-between;
+  width: 222px;
+}
+.header .interactions .img-profile {
+  width: 23px;
+  height: 23px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.header .interactions img {
+  width: 22px;
+  height: 22px;
 }
 .header .input {
   display: none;
@@ -164,9 +174,7 @@ header {
 }
 @media (min-width: 768px) {
   .tab-bar {
-    background-color: #fff;
-    border: 1px solid #dbdbdb;
-    position: sticky;
+    display: none;
   }
 }
 .tab-bar .img-tab-bar {

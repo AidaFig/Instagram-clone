@@ -31,12 +31,25 @@ header {
         }
     }
     
-    .qrcode-reader {
-        width: 20px;
-        height: 20px;
-        cursor: pointer;
-    } 
+    .interactions {
+        //display: none;
+    
+            display: flex;
+            justify-content: space-between;
+            width: 222px;
+        
+        .img-profile {
+            width: 23px;
+            height: 23px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
 
+        img {
+            width: 22px;
+            height: 22px;
+        }
+    }
     .input{
         display: none;
 
@@ -149,9 +162,7 @@ header {
     @include flex (row, space-between, center);
 
     @media (min-width: $breakpoint) {
-        background-color: $highlight-contrast-color;
-        border: 1px solid $border-desktop;
-        position: sticky;
+       display: none;
     }
 
     .img-tab-bar {

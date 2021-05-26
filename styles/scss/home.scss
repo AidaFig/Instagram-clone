@@ -26,6 +26,7 @@ header {
         
         @media (min-width: $breakpoint) {
             max-width: 935px;
+            padding: 0;
             margin: auto;
             background-color: $highlight-contrast-color;
 

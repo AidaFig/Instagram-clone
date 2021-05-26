@@ -48,6 +48,7 @@ header .header {
 @media (min-width: 768px) {
   header .header {
     max-width: 935px;
+    padding: 0;
     margin: auto;
     background-color: #fff;
   }
